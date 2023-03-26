@@ -1,15 +1,19 @@
-title: Ptrade之家
+# The `>` after `description:` means to ignore line-breaks until next key. If you want to omit the line-break after the end of text, use `>-` instead.
+description: > #介绍网站，主要显示在meta标签中
+  Ptrade量化交易入门教程、开户、代写量化交易策略
+
+title: Ptrade之家 #网站的名字 name of your site
+logo: /assets/global_img/logo.png
+favicon: /assets/global_img/favicon.ico
+footer_info: 未经书面授权，严禁转载、引用本站的任何内容，一经发现将追究法律责任。
+img_path: /assets/posts_img
+
 author:
   name: GitHub User
   email: your-email@domain.com
 
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-
 
 # Build settings
-
 theme: minima
 
 plugins:
@@ -24,8 +28,6 @@ header_pages:
    - _pages/faq.md
    - _pages/outsource.md
    - _pages/broker.md
-
-
 
 
 # Set to `true` to show excerpts on the homepage.
@@ -56,8 +58,6 @@ minima:
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #
    date_format: "%Y-%m-%d %H:%M"
-
-   logo: /assets/img/logo.png
 
   # Generate social links in footer.
   #

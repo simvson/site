@@ -10,5 +10,8 @@
   {%- endif -%}
 
   {%- include custom-head.html -%}
-  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+
+  {% if site.favicon %}
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}">
+  {% endif %}
 </head>
