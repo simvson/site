@@ -5,7 +5,7 @@ description: > #介绍网站，主要显示在meta标签中
 title: Ptrade之家 #网站的名字 name of your site
 logo: /assets/global_img/logo.png
 favicon: /assets/global_img/favicon.ico
-footer_info: 未经书面授权，严禁转载、引用本站的任何内容，一经发现将追究法律责任。
+footer_info: 未经书面授权严禁转载、引用本站的任何内容，一经发现将追究法律责任。
 #img_path: /assets/posts_img
 
 author:
