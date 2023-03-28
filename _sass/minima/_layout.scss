@@ -147,9 +147,39 @@
   color: $brand-color;
 }
 
-.tight-line-height {
-  line-height: 1.2em;
+
+/*底部悬浮框开始*/
+.tooltip {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
 }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #222222;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: table;
+  max-width: 300px;
+  white-space: normal;
+  margin-bottom: 10px; /* Add some space between the tooltip and the text */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/*底部悬浮框结束*/
 
 .footer-col {
   margin-bottom: $spacing-unit * .5;

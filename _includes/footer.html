@@ -1,3 +1,4 @@
+
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
@@ -5,11 +6,12 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        {% if site.title -%}
-        <p class="tight-line-height">&copy; 2023 {{ site.title }}</p>
-        {%- endif %}
-        {% if site.footer_info -%}
-        <p class="tight-line-height">{{ site.footer_info | escape }}</p>
+        {% if site.title and site.footer_info -%}
+        <div class="tooltip">
+          &copy; {{ 'now' | date: "%Y" }} {{ site.title }}.&nbsp;保留所有权利
+          <span class="tooltiptext">{{ site.footer_info }}</span>
+        </div>
+        {% else %}
         {%- endif %}
       </div>
     </div>
