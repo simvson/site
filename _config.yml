@@ -26,6 +26,7 @@ plugins:
 header_pages:
    - _pages/tutorial.md
    - _pages/faq.md
+   - _pages/docs.html
    - _pages/outsource.md
    - _pages/broker.md
 

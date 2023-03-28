@@ -11,8 +11,8 @@ permalink: /
 ---
 
 <br>
-  Ptrade之家是一个由量化交易爱好者建立的网站，致力于为Ptrade量化交易系统的初学者和爱好者提供帮助。
-
+<p>  Ptrade之家是一个由量化交易爱好者建立的网站，致力于为Ptrade量化交易系统的初学者和爱好者提供帮助。</p>
+<p>  Ptrade Home is a website built by a quantitative trading enthusiast, dedicated to providing guidace for beginners and enthusiasts of Ptrade quantitative trading system.(Articles are only available in Chinese at present.)</p>
 <br>
 本站提供如下服务：
 
