@@ -2,7 +2,7 @@
 title:  05、Ptrade策略框架简介
 date:   2023-03-27 19:50:30 +0800
 categories: tutorial
-order: 4
+order: 5
 permalink: /tutorial/strategy-frame
 ---
 
