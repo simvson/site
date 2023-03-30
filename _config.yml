@@ -7,17 +7,18 @@ logo: /assets/global_img/logo.png
 favicon: /assets/global_img/favicon.ico
 footer_info: 未经书面授权许可，任何个人和组织不得以任何形式转载、引用本站的任何内容。本站保留追究侵权者法律责任的权利。
 
-
 author:
   name: Zhu
   email: your-email@domain.com
 
+url: "https://quants.site"
 
 # Build settings
 theme: minima
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 #  - jekyll-feed
 
 
