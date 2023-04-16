@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>04、客户端界面综览 | Ptrade之家</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="04、客户端界面综览" />
+<meta name="author" content="Zhu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="  Ptrade客户端包含行情、交易、工具、量化、日内五个功能模块。 一、量化模块   本教程主要介绍量化模块的使用，它包含研究、回测、交易、帮助四个子模块。 1、研究模块   研究模块有两个子模块，一个是文件管理，一个是Jupyter。 （1）Jupyter   Jupyter是一个流行的交互式笔记本，用户可以直观的看到代码的运行结果，包括变量的计算结果、生成的图形等等。Ptrade客户端中集成了Jupyter的一些基本功能，方便用户进行策略研究和代码调试。 （2）文件管理模块   文件管理模块允许用户在服务器端创建、编辑、管理自己的文件。   该模块极大的提高了Ptrade的灵活性，例如：用户可以将数据提前保存到研究目录下，回测时直接从研究目录中读取，可以极大的提高回测速度；用户可以将研究目录作为“中转站”，实现跨策略交互数据；用户可以编写脚本定期将外网数据保存到本地，然后通过定时上传功能上传到服务器，间接实现Ptrade服务器与外网间的数据交互自动化。更多的妙用等待你来发现。 2、回测模块   回测模块主要用于策略的代码调试和回测。用户可以根据回测结果对策略进行分析和调整。 3、交易模块   如果你对策略在回测模式下的运行结果感到满意，那么可以考虑在交易模式下运行该策略。交易模式下运行的策略将会产生真实的交易。   交易模块支持同时运行多个策略。 4、帮助   这里可以查看完整的API文档。 二、其他模块   除了主打的量化功能，Ptrade还提供行情浏览、手工交易等功能。由于这些不是本教程的侧重点，所以后续不再过多介绍，感兴趣的读者可以自行研究。 1、行情模块   用户可以在这里浏览股票的分时图、K线图、F10信息等，可以进行简单的自选股管理。 2、交易模块   用户可以在这里进行手工下单、查看持仓信息、资金信息、委托信息、成交记录等。 3、工具模块   这里集成了一些主流的手工交易工具，例如网格交易、算法交易等等。 4、日内模块   这里提供了几种快速手工下单的工具。" />
+<meta property="og:description" content="  Ptrade客户端包含行情、交易、工具、量化、日内五个功能模块。 一、量化模块   本教程主要介绍量化模块的使用，它包含研究、回测、交易、帮助四个子模块。 1、研究模块   研究模块有两个子模块，一个是文件管理，一个是Jupyter。 （1）Jupyter   Jupyter是一个流行的交互式笔记本，用户可以直观的看到代码的运行结果，包括变量的计算结果、生成的图形等等。Ptrade客户端中集成了Jupyter的一些基本功能，方便用户进行策略研究和代码调试。 （2）文件管理模块   文件管理模块允许用户在服务器端创建、编辑、管理自己的文件。   该模块极大的提高了Ptrade的灵活性，例如：用户可以将数据提前保存到研究目录下，回测时直接从研究目录中读取，可以极大的提高回测速度；用户可以将研究目录作为“中转站”，实现跨策略交互数据；用户可以编写脚本定期将外网数据保存到本地，然后通过定时上传功能上传到服务器，间接实现Ptrade服务器与外网间的数据交互自动化。更多的妙用等待你来发现。 2、回测模块   回测模块主要用于策略的代码调试和回测。用户可以根据回测结果对策略进行分析和调整。 3、交易模块   如果你对策略在回测模式下的运行结果感到满意，那么可以考虑在交易模式下运行该策略。交易模式下运行的策略将会产生真实的交易。   交易模块支持同时运行多个策略。 4、帮助   这里可以查看完整的API文档。 二、其他模块   除了主打的量化功能，Ptrade还提供行情浏览、手工交易等功能。由于这些不是本教程的侧重点，所以后续不再过多介绍，感兴趣的读者可以自行研究。 1、行情模块   用户可以在这里浏览股票的分时图、K线图、F10信息等，可以进行简单的自选股管理。 2、交易模块   用户可以在这里进行手工下单、查看持仓信息、资金信息、委托信息、成交记录等。 3、工具模块   这里集成了一些主流的手工交易工具，例如网格交易、算法交易等等。 4、日内模块   这里提供了几种快速手工下单的工具。" />
+<link rel="canonical" href="http://localhost:4000/tutorial/ui-overview" />
+<meta property="og:url" content="http://localhost:4000/tutorial/ui-overview" />
+<meta property="og:site_name" content="Ptrade之家" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-26T19:50:30+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="04、客户端界面综览" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Zhu"},"dateModified":"2023-03-26T19:50:30+08:00","datePublished":"2023-03-26T19:50:30+08:00","description":"  Ptrade客户端包含行情、交易、工具、量化、日内五个功能模块。 一、量化模块   本教程主要介绍量化模块的使用，它包含研究、回测、交易、帮助四个子模块。 1、研究模块   研究模块有两个子模块，一个是文件管理，一个是Jupyter。 （1）Jupyter   Jupyter是一个流行的交互式笔记本，用户可以直观的看到代码的运行结果，包括变量的计算结果、生成的图形等等。Ptrade客户端中集成了Jupyter的一些基本功能，方便用户进行策略研究和代码调试。 （2）文件管理模块   文件管理模块允许用户在服务器端创建、编辑、管理自己的文件。   该模块极大的提高了Ptrade的灵活性，例如：用户可以将数据提前保存到研究目录下，回测时直接从研究目录中读取，可以极大的提高回测速度；用户可以将研究目录作为“中转站”，实现跨策略交互数据；用户可以编写脚本定期将外网数据保存到本地，然后通过定时上传功能上传到服务器，间接实现Ptrade服务器与外网间的数据交互自动化。更多的妙用等待你来发现。 2、回测模块   回测模块主要用于策略的代码调试和回测。用户可以根据回测结果对策略进行分析和调整。 3、交易模块   如果你对策略在回测模式下的运行结果感到满意，那么可以考虑在交易模式下运行该策略。交易模式下运行的策略将会产生真实的交易。   交易模块支持同时运行多个策略。 4、帮助   这里可以查看完整的API文档。 二、其他模块   除了主打的量化功能，Ptrade还提供行情浏览、手工交易等功能。由于这些不是本教程的侧重点，所以后续不再过多介绍，感兴趣的读者可以自行研究。 1、行情模块   用户可以在这里浏览股票的分时图、K线图、F10信息等，可以进行简单的自选股管理。 2、交易模块   用户可以在这里进行手工下单、查看持仓信息、资金信息、委托信息、成交记录等。 3、工具模块   这里集成了一些主流的手工交易工具，例如网格交易、算法交易等等。 4、日内模块   这里提供了几种快速手工下单的工具。","headline":"04、客户端界面综览","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tutorial/ui-overview"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/global_img/logo.png"},"name":"Zhu"},"url":"http://localhost:4000/tutorial/ui-overview"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Ptrade之家" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/global_img/favicon.ico">
+  
+</head><body><header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/"> <img src="/assets/global_img/logo.png" alt="Logo" style="width: 300px; border: 0px;"></a>
+    <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/tutorial/">入门教程</a><a class="page-link" href="/faq/">常见问题</a><a class="page-link" href="/docs/">API文档</a><a class="page-link" href="/outsource/">代写策略</a><a class="page-link" href="/broker/">开户咨询</a></div>
+
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">04、客户端界面综览</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2023-03-26T19:50:30+08:00" itemprop="datePublished">
+        2023-03-26 19:50
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>  Ptrade客户端包含行情、交易、工具、量化、日内五个功能模块。</p>
+
+<p><b>一、量化模块</b></p>
+
+<p>  本教程主要介绍量化模块的使用，它包含研究、回测、交易、帮助四个子模块。</p>
+
+<p><b>1、研究模块</b></p>
+
+<p>  研究模块有两个子模块，一个是文件管理，一个是Jupyter。</p>
+
+<p>（1）Jupyter</p>
+
+<p>  Jupyter是一个流行的交互式笔记本，用户可以直观的看到代码的运行结果，包括变量的计算结果、生成的图形等等。Ptrade客户端中集成了Jupyter的一些基本功能，方便用户进行策略研究和代码调试。</p>
+<div align="center"><img src="/assets/posts_img/20230326_01.webp" alt="" width="600" height="auto" /></div>
+<p><br />
+（2）文件管理模块</p>
+
+<p>  文件管理模块允许用户在服务器端创建、编辑、管理自己的文件。</p>
+
+<p>  该模块极大的提高了Ptrade的灵活性，例如：用户可以将数据提前保存到研究目录下，回测时直接从研究目录中读取，可以极大的提高回测速度；用户可以将研究目录作为“中转站”，实现跨策略交互数据；用户可以编写脚本定期将外网数据保存到本地，然后通过定时上传功能上传到服务器，间接实现Ptrade服务器与外网间的数据交互自动化。更多的妙用等待你来发现。</p>
+<div align="center"><img src="/assets/posts_img/20230326_02.webp" alt="" width="600" height="auto" /></div>
+<p><br />
+<b>2、回测模块</b></p>
+
+<p>  回测模块主要用于策略的代码调试和回测。用户可以根据回测结果对策略进行分析和调整。</p>
+<div align="center"><img src="/assets/posts_img/20230326_03.webp" alt="" width="600" height="auto" /></div>
+<p><br />
+<b>3、交易模块</b></p>
+
+<p>  如果你对策略在回测模式下的运行结果感到满意，那么可以考虑在交易模式下运行该策略。交易模式下运行的策略将会产生真实的交易。</p>
+
+<p>  交易模块支持同时运行多个策略。</p>
+<div align="center"><img src="/assets/posts_img/20230326_04.webp" alt="" width="600" height="auto" /></div>
+<p><br />
+<b>4、帮助</b></p>
+
+<p>  这里可以查看完整的API文档。</p>
+<div align="center"><img src="/assets/posts_img/20230326_05.webp" alt="" width="600" height="auto" /></div>
+<p><br />
+<b>二、其他模块</b></p>
+
+<p>  除了主打的量化功能，Ptrade还提供行情浏览、手工交易等功能。由于这些不是本教程的侧重点，所以后续不再过多介绍，感兴趣的读者可以自行研究。</p>
+
+<p><b>1、行情模块</b></p>
+
+<p>  用户可以在这里浏览股票的分时图、K线图、F10信息等，可以进行简单的自选股管理。</p>
+<div align="center"><img src="/assets/posts_img/20230326_06.webp" alt="" width="600" height="auto" /></div>
+<p><br />
+<b>2、交易模块</b></p>
+
+<p>  用户可以在这里进行手工下单、查看持仓信息、资金信息、委托信息、成交记录等。</p>
+<div align="center"><img src="/assets/posts_img/20230326_07.webp" alt="" width="600" height="auto" /></div>
+<p><br />
+<b>3、工具模块</b></p>
+
+<p>  这里集成了一些主流的手工交易工具，例如网格交易、算法交易等等。</p>
+<div align="center"><img src="/assets/posts_img/20230326_08.webp" alt="" width="600" height="auto" /></div>
+<p><br />
+<b>4、日内模块</b></p>
+
+<p>  这里提供了几种快速手工下单的工具。</p>
+<div align="center"><img src="/assets/posts_img/20230326_09.webp" alt="" width="600" height="auto" /></div>
+
+  </div><a class="u-url" href="/tutorial/ui-overview" hidden></a>
+</article>
+
+      </div>
+    </main>
+<footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <div class="tooltip">
+          &copy; 2023 Ptrade之家.&nbsp;保留所有权利
+          <span class="tooltiptext">未经书面授权许可，任何个人和组织不得以任何形式转载、引用本站的任何内容。本站保留追究侵权者法律责任的权利。</span>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
