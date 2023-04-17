@@ -1,7 +1,7 @@
 # The `>` after `description:` means to ignore line-breaks until next key. If you want to omit the line-break after the end of text, use `>-` instead.
 description: "Ptrade量化交易入门教程、开户、代写量化交易策略" #介绍网站，主要显示在meta标签中
 
-title: Ptrade之家 #网站的名字 name of your site
+title: "Ptrade之家" #网站的名字 name of your site
 logo: /assets/global_img/logo.png
 favicon: /assets/global_img/favicon.ico
 footer_info: 未经书面授权许可，任何个人和组织不得以任何形式转载、引用本站的任何内容。本站保留追究侵权者法律责任的权利。
