@@ -1,0 +1,81 @@
+# The `>` after `description:` means to ignore line-breaks until next key. If you want to omit the line-break after the end of text, use `>-` instead.
+description: > #介绍网站，主要显示在meta标签中
+  Ptrade量化交易入门教程、开户、代写量化交易策略
+
+title: Ptrade之家 #网站的名字 name of your site
+logo: /assets/global_img/logo.png
+favicon: /assets/global_img/favicon.ico
+footer_info: 未经书面授权许可，任何个人和组织不得以任何形式转载、引用本站的任何内容。本站保留追究侵权者法律责任的权利。
+
+author:
+  name: Zhu
+  email: your-email@domain.com
+
+url: ""
+
+# Build settings
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+#  - jekyll-feed
+
+
+# If you want to link only specific pages in your header, uncomment this and add the path to the pages in order as they should show up.
+#如果你只想在页面的顶部显示指定的页面链接，那么取消下边这段代码的注释，然后按照示例的格式添加你想要显示的页面
+header_pages:
+   - _pages/tutorial.md
+   - _pages/faq.md
+   - _pages/docs.html
+   - _pages/outsource.md
+   - _pages/broker.md
+
+
+# Set to `true` to show excerpts on the homepage.
+show_excerpts:
+
+
+defaults:
+  - scope:
+      path: "_posts" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      excerpt_separator: <!--more-->
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+
+
+include:
+  - _pages
+
+
+# Theme-specific settings
+minima:
+  # Minima date format.
+  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
+  #
+   date_format: "%Y-%m-%d %H:%M"
+
+  # Generate social links in footer.
+  #
+  # social_links:
+  #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
+  #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
+  #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
+  #   - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
+  #   - { platform: github,         user_url: "https://github.com/jekyll/minima" }
+  #   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
+  #   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
+  #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
+  #   - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
+  #   - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
+  #   - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
+  #   - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
+  #   - { platform: telegram,       user_url: "https://t.me/jekyll" }
+  #   - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
+  #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
