@@ -1,6 +1,6 @@
 ---
 title:  提示“账户无可转债交易权限，无法进行对应类型交易”
-date:   2023-04-21 19:50:30 +0800
+date:   2023-03-28 19:50:30 +0800
 categories: faq
 order: 1
 permalink: /faq/convertible-bond-permission

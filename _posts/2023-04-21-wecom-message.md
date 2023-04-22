@@ -1,6 +1,6 @@
 ---
 title:  无法通过send_qywx函数发送企业微信消息
-date:   2023-03-28 19:50:30 +0800
+date:   2023-04-21 19:50:30 +0800
 categories: faq
 order: 2
 permalink: /faq/wecom-message
