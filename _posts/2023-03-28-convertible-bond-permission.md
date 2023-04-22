@@ -9,10 +9,12 @@ permalink: /faq/convertible-bond-permission
 <b>问题：</b>
 
 &emsp;&emsp;我的证券账户已经开通了可转债交易权限，为什么使用Ptrade时仍然提示“账户无可转债交易权限，无法进行对应类型交易”？
+
 <br>
 <b>原因</b>：
 
 &emsp;&emsp;这里的可转债交易权限指的是使用Ptrade进行可转债交易的权限，而不是你的证券账户的可转债交易权限。Ptrade中的可转债交易权限默认是关闭的。
+
 <br>
 <b>解决方法</b>：
 
