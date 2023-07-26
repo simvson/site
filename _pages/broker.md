@@ -48,8 +48,8 @@ permalink: /broker/
 <td>国盛证券</td>
 <td>沪深A股：万1</td>
 <td>-</td>
-<td>Ptrade：50w；<br>QMT：100w<br>掘金：待定(即将上线)</td>
-<td>2023/03/31</td>
+<td>Ptrade：50w；<br>QMT：100w<br>掘金：5w</td>
+<td>2023/07/24</td>
 </tr>
 </tbody>
 </table>
