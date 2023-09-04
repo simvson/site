@@ -56,7 +56,7 @@ permalink: /broker/
 <p><font color="#9e9e9e">本表格不定期更新，作者尽量确保信息准确，但作者不对准确性承担任何责任，具体以券商为准。</font>
 <br>
 <br>
-开户咨询：<br>
+开户咨询（请备注“来自Ptrade之家”）：<br>
 微信：azhu6713<br>
 QQ：124533718<br>
 
