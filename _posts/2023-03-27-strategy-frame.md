@@ -51,5 +51,5 @@ permalink: /tutorial/strategy-frame
 
 &emsp;&emsp;2、Ptrade内置的python和部分第三方库的版本较低，在使用时需要注意一下不同版本之间的语法、支持的函数可能会有一些差异。
 
-&emsp;&emsp;经测试，截至2023年3月，Ptrade内置的python版本是3.5.1，而官方的最新版本是3.12.0Alpha6。
+&emsp;&emsp;经测试，截至2023年3月，Ptrade内置的python版本是3.5.1，而Python官方的最新版本是3.12.0Alpha6。
 
