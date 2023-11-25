@@ -20,17 +20,19 @@ permalink: /tutorial/strategy-frame
 
 ## 二、Ptrade有自己的策略框架体系
 
-&emsp;&emsp;Ptrade保留了几个自定义函数，每个保留的自定义函数可以实现一些特定的功能。通过这些自定义函数的巧妙组合，可以实现各种简单或者复杂的量化交易策略。
+&emsp;&emsp;Ptrade中有一些保留的自定义函数名称，这些保留自定义函数可以实现不同的触发逻辑。
 
-&emsp;&emsp;下边的图罗列了Ptrade所有保留的自定义函数以及它们的作用。关于它们的用法，请参考API文档以及后续的教程。
-（相关链接：<a href="http://121.41.137.161:9091/hub/help/api#%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E6%A1%86%E6%9E%B6" target="_blank">API文档-业务流程框架</a>）
+&emsp;&emsp;在启动策略时，Ptrade会先启动“策略引擎”，然后再由“策略引擎”来调用用户策略文件中的保留自定义函数。“策略引擎”定义了每个保留自定义函数的执行顺序、触发逻辑。通过这些保留自定义函数与其他API函数的巧妙组合，可以实现各种简单或者复杂的量化交易策略。
+
+&emsp;&emsp;如果你是python初学者的话，我建议你先暂停继续学习Ptrade，花一些时间了解一下python跨文件调用函数的实现方法。这会帮助你更好的了解Ptrade、python是怎么工作的，进而有能力驾驭更复杂的量化交易策略。（相关链接：<a href="https://www.baidu.com/s?ie=UTF-8&wd=python%20%E8%B7%A8%E6%96%87%E4%BB%B6%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0" target="_blank">百度-python 跨文件调用函数</a>）
+
+
+&emsp;&emsp;下边的图表展示了Ptrade的所有保留自定义函数以及它们的触发逻辑。（相关链接：<a href="http://121.41.137.161:9091/hub/help/api#业务流程框架" target="_blank">API文档-业务流程框架</a>）
 <div  align="center"><img src="/assets/posts_img/20230327_01.webp" alt="" width="800" height=auto/></div>
 
 ### 1、初始化阶段
 
-　　初始化阶段对应API中的initialize()函数，会在策略启动后最先运行，并且只运行一次。initialize()是Ptrade策略的必选函数。
-
-　　初始化阶段的一般作用：
+　　初始化阶段对应API中的initialize()函数，会在策略启动后最先运行，并且只运行一次。初始化阶段的一般作用：
 
 　　(1)为一些基础性的全局变量进行初始化赋值。
 
@@ -108,7 +110,7 @@ permalink: /tutorial/strategy-frame
 
 　　注意：
 
-(1)避免在盘中阶段运行耗时过长的代码，以免造成I/O阻塞、影响时效性。可考虑放到盘前阶段或者前一日的盘后阶段。
+　　(1)避免在盘中阶段运行耗时过长的代码，以免造成I/O阻塞、影响时效性。可考虑放到盘前阶段或者前一日的盘后阶段。
 <br>
 
 ### 4、盘后阶段
@@ -135,26 +137,7 @@ permalink: /tutorial/strategy-frame
 
 　　注意：
 
-　　(1)日频数据的落库时间不固定，一般在15:30-16:00之间可以完成，但也不排除偶尔会有延误。请考虑将启动时间适当的延后，并且做容错处理。
-
-### 5、一个简单但完整的策略示例
-
-&emsp;&emsp;我们来看一个简单但是结构完整的Ptrade策略示例：
-<div  align="center"><img src="/assets/posts_img/20230327_02.webp" alt="" width="600" height=auto/></div>
-<br>
-&emsp;&emsp;这个策略的周期级别是每日，回测范围是2023/03/15至2023/03/17。策略的代码包含两个Ptrade保留的自定义函数（initialize、before_trading_start）和一个用户自定义函数func1。它的作用是在每一个交易日的固定时间输出显示一次“今天是一个新的交易日”。
-
-&emsp;&emsp;可能你会说：我能认出来这三个都是自定义函数，但我有两件事情没搞明白：
-
-&emsp;&emsp;（1）自定义函数是怎么被触发的，我怎么没看到调用initialize、before_trading_start这两个自定义函数的代码呢？
-
-&emsp;&emsp;（2）initialize、before_trading_start这两个Ptrade保留的自定义函数是怎么实现在固定的时间触发执行的呢？
-
-&emsp;&emsp;这涉及到Ptrade的工作机制。在启动策略时，Ptrade会先启动“策略引擎”，然后再由“策略引擎”来调用我们策略文件中的自定义函数。每个Ptrade保留的自定义函数有什么功能、它们的执行顺序和执行时间是什么，都是在“策略引擎”中定义的。
-
-&emsp;&emsp;如果你是python初学者的话，我建议你先暂停继续学习Ptrade，花点时间了解一下python跨文件调用函数的实现方法。这会帮助你更好的了解Ptrade、python是怎么工作的，进而有能力驾驭更复杂的量化交易策略。
-
-（相关链接：<a href="https://www.baidu.com/s?ie=UTF-8&wd=python%20%E8%B7%A8%E6%96%87%E4%BB%B6%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0" target="_blank">百度-python 跨文件调用函数</a>）
+　　(1)日频数据的落库时间不固定，一般在15:30-16:00之间可以完成，但也不排除偶尔会有延误。请考虑将启动时间适当的延后，并且增加容错逻辑。
 
 ## 三、Ptrade可能存在一些限制和差异
 
