@@ -2,7 +2,7 @@
 title:  07、如何在Ptrade中调试代码（编辑中）
 date:   2023-11-29 18:50:30 +0800
 categories: tutorial
-order: 5
+order: 7
 permalink: /tutorial/how-to-debug
 ---
 
