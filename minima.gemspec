@@ -1,4 +1,4 @@
-﻿# frozen_string_literal: true
+# frozen_string_literal: true
 
 Gem::Specification.new do |spec|
   spec.name     = "minima"
