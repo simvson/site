@@ -18,10 +18,10 @@ permalink: /broker/
 <tbody>
 <tr>
 <td>国金证券</td>
-<td>沪深A股：万1；<br>过户费：沪万0.1，深免<br>ETF：万0.5<br>可转债：万0.5<br>逆回购：1折</td>
-<td>50w</td>
-<td>Ptrade：50w<br>QMT：50w</td>
-<td>2023/08/15</td>
+<td>沪深A股：万1；<br>过户费：沪万0.1，深免<br>ETF：万0.5<br>可转债：万0.5<br>逆回购：标准价的一折</td>
+<td>2w一个月+至少交易一次股票或场外基金</td>
+<td>Ptrade：2w<br>QMT：2w</td>
+<td>2024/03/15</td>
 </tr>
 <tr>
 <td>东莞证券</td>
